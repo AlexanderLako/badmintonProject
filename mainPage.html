@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBC Program</title>
+    <style>
+        /* Basic Styling for Layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        /* Flexbox layout for six boxes */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box {
+            background-image: url("https://img.freepik.com/premium-vector/badminton-court-line_807238-46.jpg");
+            background-size: 100%;
+            background-position: 20%;
+            /*background-color: red;*/
+            padding: 100px;
+            width: calc(50% - 20px); /* 3 boxes per row */
+            box-sizing: border-box;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .box {
+                width: calc(50% - 20px); /* 2 boxes per row for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                width: 100%; /* 1 box per row for very small screens */
+            }
+        }
+
+        .label {
+            color: white;
+            padding: 8px;
+          }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Carleton Badminton Club Games</h1>
+    </header>
+
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <div class="box">
+            <h2>Court 3</h2>
+            <label for="html">HTML</label><br>
+            <!-- <img
+                alt="badminton court drawing"
+                src="https://img.freepik.com/premium-vector/badminton-court-line_807238-46.jpg" /> -->
+        </div>
+        <div class="box">
+            <h2>Court 4</h2>
+        </div>
+        <div class="box">
+            <h2>Court 2</h2>
+        </div>
+        <div class="box">
+            <h2>Court 5</h2>
+        </div>
+        <div class="box">
+            <h2>Court 1</h2>
+        </div>
+        <div class="box">
+            <h2>Court 6</h2>
+        </div>
+    </div>
+
+</body>
+</html>
