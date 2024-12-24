@@ -33,17 +33,23 @@
             background-image: url("https://github.com/AlexanderLako/badmintonProject/blob/main/media/badmintonCourt(1).png?raw=true");
             background-size: 100%;
             background-position: center;
-            padding: 5px;
+            padding: 10px;
             width: calc(50% - 10px);
             box-sizing: border-box;
             border: 3px solid black;
             text-align: center;
 
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(6, auto);
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(4, auto);
             gap: 10px; /* Space between grid items */
             
+        }
+
+        button{
+            padding: 0px;
+            margin: 0px;
+            grid-column:span 2;
         }
 
         /* Responsive Design */
@@ -62,22 +68,22 @@
         .label {
             float: right;
             font-size: 20px;
+            grid-column:span 4;
           }
-          .p1{color: red; text-align: left;}
-          .p2{color: green; text-align: left;}
-          .p3{color: black; text-align: right;}
-          .p4{color: purple; text-align: right;}
+          .p1{color: red; text-align: right; margin-right:60px;}
+          .p2{color: green; text-align: right; margin-right:60px; margin-top:30px;}
+          .p3{color: black; text-align: left; margin-left:60px;}
+          .p4{color: purple; text-align: left; margin-left:60px; margin-top:30px;}
 
-          .time{text-align: right; margin-top: 5%;}
+          .time{text-align: right; margin-top: 5%; grid-column:span 6;}
 
           .courtHeading{
-            float: center; 
             color: black; 
             font-weight: bold;
             font-family: Garamond, serif;
             font-size: 25px; 
             padding: 5px;
-            grid-column:span 2;
+            grid-column:span 8;
         }
 
     </style>
@@ -95,53 +101,59 @@
             <label class = courtHeading>COURT 3</label>
             <label class = "label p1">Alexander Lako</label>
             <label class = "label p3">Some random persons name</label>
-            <label class = "label p2">player2</label>
-            <label class = "label p4">player4</label> <br>
+            <label class = "label p2">William Fang</label>
+            <label class = "label p4">Edward Kan</label>
+            <button> Button1 </button>
 
             <label class = "time">Time Elasped: 0</label>
         </div>
         <div class="box" id = "court4">
-            <label class = courtHeading>COURT 4</label> <br>
+            <label class = courtHeading>COURT 4</label>
             <label class = "label p1">Alexander Lako</label>
-            <label class = "label p3">Some random persons name</label> <br><br>
-            <label class = "label p2">player2</label>
-            <label class = "label p4">player4</label> <br><br>
+            <label class = "label p3">Some random persons name</label>
+            <label class = "label p2">William Fang</label>
+            <label class = "label p4">Edward Kan</label>
+            <button> Button1 </button>
 
             <label class = "time">Time Elasped: 0</label>
         </div>
         <div class="box" id = "court2">
-            <label class = courtHeading>COURT 2</label> <br>
+            <label class = courtHeading>COURT 2</label>
             <label class = "label p1">Alexander Lako</label>
-            <label class = "label p3">Some random persons name</label> <br><br>
-            <label class = "label p2">player2</label>
-            <label class = "label p4">player4</label> <br><br>
+            <label class = "label p3">Some random persons name</label>
+            <label class = "label p2">William Fang</label>
+            <label class = "label p4">Edward Kan</label>
+            <button> Button1 </button>
 
             <label class = "time">Time Elasped: 0</label>
         </div>
         <div class="box" id = "court5">
-            <label class = courtHeading>COURT 5</label> <br>
+            <label class = courtHeading>COURT 5</label>
             <label class = "label p1">Alexander Lako</label>
-            <label class = "label p3">Some random persons name</label> <br><br>
-            <label class = "label p2">player2</label>
-            <label class = "label p4">player4</label> <br><br>
+            <label class = "label p3">Some random persons name</label>
+            <label class = "label p2">William Fang</label>
+            <label class = "label p4">Edward Kan</label>
+            <button> Button1 </button>
 
             <label class = "time">Time Elasped: 0</label>
         </div>
         <div class="box" id = "court1">
-            <label class = courtHeading>COURT 1</label> <br>
+            <label class = courtHeading>COURT 1</label>
             <label class = "label p1">Alexander Lako</label>
-            <label class = "label p3">Some random persons name</label> <br><br>
-            <label class = "label p2">player2</label>
-            <label class = "label p4">player4</label> <br><br>
+            <label class = "label p3">Some random persons name</label>
+            <label class = "label p2">William Fang</label>
+            <label class = "label p4">Edward Kan</label>
+            <button> Button1 </button>
 
             <label class = "time">Time Elasped: 0</label>
         </div>
         <div class="box" id = "court6">
-            <label class = courtHeading>COURT 6</label> <br>
+            <label class = courtHeading>COURT 6</label>
             <label class = "label p1">Alexander Lako</label>
-            <label class = "label p3">Some random persons name</label> <br><br>
-            <label class = "label p2">player2</label>
-            <label class = "label p4">player4</label> <br><br>
+            <label class = "label p3">Some random persons name</label>
+            <label class = "label p2">William Fang</label>
+            <label class = "label p4">Edward Kan</label>
+            <button> Button1 </button>
 
             <label class = "time">Time Elasped: 0</label>
         </div>
